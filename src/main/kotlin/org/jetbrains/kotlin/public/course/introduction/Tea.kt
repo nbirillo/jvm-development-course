@@ -1,6 +1,6 @@
 package org.jetbrains.kotlin.public.course.introduction
 
-class OolongSack
+class OolongSnack
 
 class BlackSnack
 
