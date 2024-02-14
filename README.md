@@ -12,3 +12,8 @@ In this repo you will find all the material from our Kotlin classes:
 - JVM:
 
   - [Presentation](./src/notebooks/jvm/The_Java_Virtual_Machine.pdf)
+
+- Gradle:
+
+  - [Presentation](./src/notebooks/gradle/Gradle.pdf)
+  - [Practice task](https://github.com/nbirillo/jvm-dev-gradle-task)
