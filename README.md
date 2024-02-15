@@ -17,3 +17,8 @@ In this repo you will find all the material from our Kotlin classes:
 
   - [Presentation](./src/notebooks/gradle/Gradle.pdf)
   - [Practice task](https://github.com/nbirillo/jvm-dev-gradle-task)
+
+- OOP:
+
+  - [Kotlin Notebook](./src/notebooks/oop/ObjectOrientedProgramming.ipynb)
+  - [Helper sources](./src/main/kotlin/org/jetbrains/kotlin/public/course/oop)
