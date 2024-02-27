@@ -22,6 +22,7 @@ In this repo you will find all the material from our Kotlin classes:
 
   - [Kotlin Notebook](./src/notebooks/oop/ObjectOrientedProgramming.ipynb)
   - [Helper sources](./src/main/kotlin/org/jetbrains/kotlin/public/course/oop)
+  - [quick draw solution](https://github.com/mikrise2/quick_draw_solution)
 
 - Generics:
 
