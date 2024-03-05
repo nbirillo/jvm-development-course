@@ -11,9 +11,6 @@ and tries to access their properties, fails to compile because the value type in
 Once the type argument is introduced, the code of printNodes function will become compilable without additional changes.
 * */
 
-// TODO: introduce a type parameter to allow for using TreeNode as generic class.
-// Function "printNodes" below should become compilable after that.
-
 /**
  * A binary tree node that holds some value.
  */
