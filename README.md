@@ -27,3 +27,11 @@ In this repo you will find all the material from our Kotlin classes:
 - Generics:
 
   - [Kotlin Notebook](./src/notebooks/generics/Generics.ipynb)
+  - [Practice task](./src/main/kotlin/org/jetbrains/kotlin/public/course/generics/practice)
+
+- Collections & FP:
+
+  - [Kotlin Notebook: Collections](./src/notebooks/collections/Collections.ipynb)
+  - [Kotlin Notebook: FP](./src/notebooks/fp/FP.ipynb)
+
+
