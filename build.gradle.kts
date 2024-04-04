@@ -1,5 +1,8 @@
+import org.jetbrains.kotlin.backend.common.phaser.transform
+
 plugins {
     kotlin("jvm") version "1.9.22"
+    id("org.jetbrains.kotlin.plugin.atomicfu") version "1.9.22"
     application
 }
 
@@ -11,6 +14,7 @@ repositories {
 }
 
 dependencies {
+    implementation("org.jetbrains.kotlinx:atomicfu:0.23.2")
     testImplementation(kotlin("test"))
 }
 
@@ -24,4 +28,8 @@ kotlin {
 
 application {
     mainClass.set("MainKt")
+}
+
+atomicfuCompilerPlugin {
+
 }
