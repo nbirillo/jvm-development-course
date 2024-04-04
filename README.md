@@ -34,4 +34,9 @@ In this repo you will find all the material from our Kotlin classes:
   - [Kotlin Notebook: Collections](./src/notebooks/collections/Collections.ipynb)
   - [Kotlin Notebook: FP](./src/notebooks/fp/FP.ipynb)
 
+- Parallel & Concurrent Programming:
+
+  - [Kotlin Notebook: Parallel Programming in Kotlin](./src/notebooks/parallel/Parallel.ipynb)
+  - Kotlin Notebook: Kotlin Coroutines(*coming soon...*)
+
 
