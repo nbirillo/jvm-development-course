@@ -43,6 +43,10 @@ fun dishonestRace(horses: List<RaceHorse>) {
     }.forEach(Thread::join)
 }
 
+/**
+ * In an honest race, we use Phaser to synchronize the steps that horses have made so far.
+ * After readying up, each horse arrives at Phaser and waits for other horses to also arrive.
+ */
 fun honestRace(horses: List<RaceHorse>) {
     val phaser = Phaser(horses.size)
     horses.map { horse ->

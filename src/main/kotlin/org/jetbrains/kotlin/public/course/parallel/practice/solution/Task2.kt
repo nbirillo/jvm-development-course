@@ -1,5 +1,9 @@
 package org.jetbrains.kotlin.public.course.parallel.practice.solution
 
+/**
+ * By making work @Volatile, we can change it from another thread and guarantee that it will see this change.
+ * The `sleep` method reacts to interruptions, so we can simply interrupt the worker.
+ */
 class StoopidWorker : Thread() {
     @Volatile var work = true
 

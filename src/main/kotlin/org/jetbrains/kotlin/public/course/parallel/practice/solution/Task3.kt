@@ -2,10 +2,24 @@ package org.jetbrains.kotlin.public.course.parallel.practice.solution
 
 import kotlin.random.Random
 
-/**
- * Even better solution would be to check for interruptions in the bubble sort
- */
 class BigBrainWorker : Thread() {
+    /**
+     * When a worker does not have any methods that check for interruptions, we can check for them manually.
+     * More than that, we can ignore those interruptions.
+     * Even better solution would be to check for interruptions in the bubble sort, to react asap.
+     */
+    private var counterInterrupted = 0
+    private fun weShouldStop(): Boolean {
+        if (interrupted()) {
+            println("You're trying to interrupt me?!")
+            counterInterrupted++
+            if (counterInterrupted > 1) {
+                println("okay :(")
+            }
+        }
+        return counterInterrupted > 1
+    }
+
     private fun bubbleSort(list: MutableList<Int>) {
         for (i in 0..<list.lastIndex) {
             for (j in (i + 1)..<list.lastIndex) {
@@ -26,20 +40,12 @@ class BigBrainWorker : Thread() {
 
     override fun run() {
         var counter = 0
-        var counterInterrupted = 0
         while (true) {
             println("Working on ${++counter}")
             work()
-            if (interrupted()) {
-                counterInterrupted++
-                if (counterInterrupted > 1) {
-                    println("okay :(")
-                    return
-                } else {
-                    println("You're trying o interrupt me?!")
-                }
-            }
+            if (weShouldStop()) break
         }
+        // some cleanup might be here
     }
 }
 
