@@ -64,6 +64,10 @@ fun testCounter(counter: Counter, expectedFinalValue: Int = 10000) {
     println("Expected: $expectedFinalValue, Actual: ${counter.value()}")
 }
 
+/**
+ * For UnsafeCounter, some updates are lost in interleaving of two threads.
+ * AtomicFuCounter keeps all updates, since it is thread-safe.
+ */
 fun main() {
     testCounter(UnsafeCounter())
     testCounter(AtomicFuCounter())
